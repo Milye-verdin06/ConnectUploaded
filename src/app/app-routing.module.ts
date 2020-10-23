@@ -9,7 +9,8 @@ const routes: Routes = [
 
   //autentificado
 
-  { path: '**', component: NopagefoundComponent },
+  { path: '', redirectTo: '/dashboard',pathMatch: 'full'},
+  {path: '**', component: NopagefoundComponent, },
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
 
 @Component({
   selector: 'app-pages',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class PagesComponent {
-  constructor() {}
+  constructor(private settingsService: SettingsService) {}
 
   year = new Date().getFullYear();
 }
